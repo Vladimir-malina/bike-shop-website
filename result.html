@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link href="styles/normalize.css" rel="stylesheet" />
+    <link href="styles/styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles/result-styles.css">
+    <script src="scripts/result.js" defer></script>
+    <title>Bike Shop</title>
+  </head>
+
+<body>
+    <div class="page">
+      <header class="header">
+        <a href="index.html" class="header__logo-link" >  
+          <img class="header__logo-pic" src="pictures/trek-logo.png" alt="logo" />
+        </a>
+        <p class="header__name">SOUL FREEDOM</p>
+      </header>
+
+      <div class="wraper">
+
+        <nav class="navigation">
+          <ul class="navigation__menu">
+            <li><a href="index.html" class="navigation__link navigation__link_1">Home</a></li>
+            <li><a href="about-us.html" class="navigation__link navigation__link_2">About us</a></li>
+            <li><a href="contact.html" class="navigation__link navigation__link_3">Contact</a></li>
+            <li><a href="register-page.html" class="navigation__link navigation__link_4">Registration</a></li>
+            <li><a href="order-page.html" class="navigation__link navigation__link_5">Order</a></li>
+          </ul>
+        </nav>
+
+        <main class="content-result">
+          <div class="result">
+            <h2 class="result__header">Order information</h2>
+            <div class="result__element">
+              <span>Model of bike</span>
+              <span class="bike"></span>
+            </div>
+            <div class="result__element result__element-comment">
+              <span>Comment</span>
+            </div>
+            <div class="comment"></div>
+
+            <div class="billing-address">
+              <h3 class="section-header">Billing address</h3>
+              <div class="result__element">
+                <span>First-name</span>
+                <span class="billing-address__first-name"></span>
+              </div>
+              <div class="result__element">
+                <span>Last Name</span>
+                <span class="billing-address__last-name"></span>
+              </div>
+              <div class="result__element">
+                <span>Street address</span>
+                <span class="billing-address__street-address"></span>
+              </div>
+              <div class="result__element">
+                <span>Region</span>
+                <span class="billing-address__region"></span>
+              </div>
+              <div class="result__element">
+                <span>Zip</span>
+                <span class="billing-address__zip"></span>
+              </div>
+              <div class="result__element">
+                <span>Phone</span>
+                <span class="billing-address__phone"></span>
+              </div>
+            </div>  
+
+            <div class="delivery-address">
+              <h3 class="section-header">Delivery address</h3>
+              <div class="result__element">
+                <span>First-name</span>
+                <span class="delivery-address__first-name"></span>
+              </div>
+              <div class="result__element">
+                <span>Last Name</span>
+                <span class="delivery-address__last-name"></span>
+              </div>
+              <div class="result__element">
+                <span>Street address</span>
+                <span class="delivery-address__street-address"></span>
+              </div>
+              <div class="result__element">
+                <span>Region</span>
+                <span class="delivery-address__region"></span>
+              </div>
+              <div class="result__element">
+                <span>Zip</span>
+                <span class="delivery-address__zip"></span>
+              </div>
+              <div class="result__element">
+                <span>Phone</span>
+                <span class="delivery-address__phone"></span>
+              </div>
+            </div>
+            
+            <div class="delivery-date">
+              <h3 class="section-header">Delivery date</h3>
+              <div class="result__element">
+                <span>Year</span>
+                <span class="year"></span>
+              </div>
+              <div class="result__element">
+                <span>Month</span>
+                <span class="month"></span>
+              </div>
+              <div class="result__element">
+                <span>Day</span>
+                <span class="day"></span>
+              </div>
+            </div>
+
+            <div class="payment">
+              <h3 class="section-header">Payment</h3>
+              <div class="result__element">
+                <span>Type of card</span>
+                <span class="type-of-card"></span>
+              </div>
+              <div class="result__element">
+                <span>Card number</span>
+                <span class="card-number"></span>
+              </div>
+              <div class="result__element">
+                <span>Expiration</span>
+                <span class="expiration"></span>
+              </div>
+            </div>
+
+            <div class="account"></div>
+              <h3 class="section-header">Account</h3>
+              <div class="result__element">
+                <span>Username</span>
+                <span class="user-name"></span>
+              </div>
+            
+
+          </div>  
+        </main>
+
+        <aside class="side-bar"></aside>
+      </div>
+      <footer class="footer">
+        <p class="footer__copyrights">© Trek Bicycle Corporation</p>
+        <p class="footer__year">2021</p>
+      </footer>
+    </div>
+  </body>
+</html>

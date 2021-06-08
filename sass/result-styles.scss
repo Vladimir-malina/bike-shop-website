@@ -1,0 +1,38 @@
+.wraper {
+  background: url(../pictures/background-2.jpeg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.content-result {
+  background: rgba(255, 255, 255, 0.99);
+  flex: 1 0;
+}
+
+.result {
+  min-width: 320px;
+    max-width: 550px;
+    margin: 0 auto;
+    padding: 20px;
+    &__header {
+      text-align: center;
+      font-size: 26px;
+      margin-bottom: 30px;
+    }
+    &__element {
+      margin-bottom: 8px;
+      display: flex;
+      justify-content: space-between;
+    }
+}
+
+.comment {
+  display: block;
+  overflow: scroll;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 20px;
+}

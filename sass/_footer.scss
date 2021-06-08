@@ -1,0 +1,24 @@
+.footer {
+  flex: 0 0 auto;
+  background-color: rgb(245, 247, 241);
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  min-height: 40px;
+	color: rgb(12, 11, 11);
+	text-align: center;
+}
+
+@media only screen and (min-width: 480px) {
+  .footer {
+    padding: 10px 35px;
+    font-size: 16px;
+    font-weight: 300;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .footer {
+    flex: 0 0 auto;
+  }
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link href="styles/normalize.css" rel="stylesheet" />
+    <link href="styles/styles.css" rel="stylesheet" />
+    <link href="styles/contact-styles.css" rel="stylesheet"/>
+    <title>Bike Shop</title>
+  </head>
+
+<body>
+    <div class="page">
+      <header class="header">
+        <a href="index.html" class="header__logo-link" >  
+          <img class="header__logo-pic" src="pictures/trek-logo.png" alt="logo" />
+        </a>
+        <p class="header__name">SOUL FREEDOM</p>
+      </header>
+
+      <div class="wraper">
+
+        <nav class="navigation">
+          <ul class="navigation__menu">
+            <li><a href="index.html" class="navigation__link navigation__link_1">Home</a></li>
+            <li><a href="about-us.html" class="navigation__link navigation__link_2">About us</a></li>
+            <li><a href="#" class="navigation__link navigation__link_3">Contact</a></li>
+            <li><a href="register-page.html" class="navigation__link navigation__link_4">Registration</a></li>
+            <li><a href="order-page.html" class="navigation__link navigation__link_5">Order</a></li>
+          </ul>
+        </nav>
+
+        <main class="content-contact">
+          <form action="#">
+            <div>
+              <p>Name:</p>
+              <input placeholder="Your name" name="username" type="text">
+            </div>
+            <div>
+              <p>Email:</p>
+              <input type="text" placeholder="Email address">
+            </div>  
+            <div>
+              <p>Your message:</p>
+              <textarea name="text" cols="35" rows="10"></textarea>
+            </div>
+            <div>
+              <br/>
+              <button type="submit">submit</button>
+            </div>
+          </form>
+        </main>
+
+        <aside class="side-bar"></aside>
+      </div>
+      <footer class="footer">
+        <p class="footer__copyrights">© Trek Bicycle Corporation</p>
+        <p class="footer__year">2021</p>
+      </footer>
+    </div>
+  </body>
+</html>

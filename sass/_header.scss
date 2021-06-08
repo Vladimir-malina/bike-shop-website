@@ -1,0 +1,65 @@
+.header {
+  flex: 0 0 auto;
+  padding: 0 20px ;
+  position: relative;
+  background: rgb(102, 98, 98);
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+	color: white;
+  
+  &__logo-link{
+    width: 20%;  
+  }
+
+  &__logo-pic {
+    width: 100%;
+    min-width: 60px;
+  }
+
+  &__name {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    line-height: 0px;
+    font-size: 17px;
+    font-family: 'Permanent Marker', cursive;
+  }
+}
+
+@media only screen and (min-width: 480px) {
+  .header {
+    min-height: 60px;
+    padding: 0 40px;
+    &__name {
+      font-size:26px;
+    }
+  }
+} 
+
+@media only screen and (min-width: 601px) {
+  .header {
+    &__name {
+    font-size: 32px;
+    }
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .header {
+    padding: 10px 40px;
+    &__name {
+    font-size: 40px;
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .header {
+    flex: 0 0 auto;
+    &__logo-link {
+    padding: 0 40px;
+    width: 220px;
+    }
+  }
+}

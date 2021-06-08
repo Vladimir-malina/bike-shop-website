@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet" />
+    <link href="styles/normalize.css" rel="stylesheet" />
+    <link href="styles/styles.css" rel="stylesheet" />
+    <link href="styles/order-styles.css" rel="stylesheet"/>
+    <script src="scripts/order-page.js" defer></script>
+    <title>Bike Shop</title>
+  </head>
+
+  <body>
+    <div class="page">
+      <header class="header">
+        <a href="index.html" class="header__logo-link">
+          <img class="header__logo-pic" src="pictures/trek-logo.png" alt="logo"/>
+        </a>
+        <p class="header__name">SOUL FREEDOM</p>
+      </header>
+
+      <div class="wraper">
+        <nav class="navigation">
+          <ul class="navigation__menu">
+            <li><a href="index.html" class="navigation__link navigation__link_1">Home</a></li>
+            <li><a href="about-us.html" class="navigation__link navigation__link_2">About us</a></li>
+            <li><a href="contact.html" class="navigation__link navigation__link_3">Contact</a></li>
+            <li><a href="register-page.html" class="navigation__link navigation__link_4">Registration</a></li>
+            <li><a href="#" class="navigation__link navigation__link_5">Order</a></li>
+          </ul>
+        </nav>
+
+        <main class="content-order">
+          <div class="content-order__row">
+            <h2 class="content-order__header">Make Your oder</h2>
+
+            <form  action="result.html" name="order" novalidate>
+
+              <!-- -------------------- MODEL OF BIKE ---------------------- -->
+
+              <div class="form-section">
+                <p class="form-section__name"> Choose Your model of bike</p>
+                
+                <div class="form-section__part">
+                  <label for="model-of-bike">Bike:</label>
+                  <input type="text" id="model-of-bike" name="model" list="models-set" required>
+                  <datalist id="models-set">
+                  </datalist>
+                </div>
+                <p class="model-of-bike__error error"></p>
+
+                <div class="form-section__part"> 
+                  <p>Add your comment here:</p>
+                  <textarea name="model-comment" id="model-comment" cols="30" rows="10" maxlength="500"></textarea>
+                </div>
+                <p class="model-comment__error error"></p>   
+              </div>
+              
+              <!-- ------------------------- BILLING ADDRESS ----------------------- -->
+
+              <div class="form-section">
+                <p class="form-section__name">Billing address</p>
+                <div class="form-section__part">
+                  <label for="billing-first-name">First-name:</label>
+                  <input type="text" name="billing-first-name" id="billing-first-name" pattern="[a-zA-Z0-9]+" minlength="2" maxlength="30" required/>
+                </div>
+                <p class="billing-first-name__error error"></p>
+
+                <div class="form-section__part"> 
+                  <label for="billing-last-name">Last name:</label>
+                  <input type="text" name="billing-last-name" id="billing-last-name" pattern="[a-zA-Z0-9]+" minlength="2" maxlength="30" required/>
+                </div>  
+                <p class="billing-last-name__error error"></p>
+
+                <div class="form-section__part"> 
+                  <label for="billing-street-address">Street address</label>
+                  <input type="text" name="billing-street-address" id="billing-street-address" required/>
+                </div>
+                <p class="billing-street-address__error error"></p>
+
+                <div class="form-section__part"> 
+                  <label for="billing-region">Region:</label>
+                  <input type="text" name="billing-region" id="billing-region" list="billing-regions-set" pattern="[Cc]herkasy|[Cc]hernihiv|[Cc]hernivtsi|[Dd]nipropetrovsk|[Dd]onetsk|[Ii]vano-Frankivsk|[Kk]harkiv|[Kk]herson|[Kk]hmeknytsk|[Kk]yiv|[Kk]irovohrad|[Ll]uhansk|[Ll]viv|[Mm]ykolaiv|[Oo]dessa|[Pp]oltava|[Rr]ivne|[S]umy|[Tt]ernopil|[Vv]innynsia|[Vv]oly|[Zz]akarpattia|[Zz]aporizhzhia|[Zz]hytomyr" required/>
+                  <datalist id="billing-regions-set">
+                    <option>Cherkasy</option>
+                    <option>Chernihiv</option>
+                    <option>Chernivtsi</option>
+                    <option>Dnipropetrovsk</option>
+                    <option>Donetsk</option>
+                    <option>Ivano-Frankivsk</option>
+                    <option>Kharkiv</option>
+                    <option>Kherson</option>
+                    <option>Khmeknytsky</option>
+                    <option>Kyiv</option>
+                    <option>Kirovohrad</option>
+                    <option>Luhansk</option>
+                    <option>Lviv</option>
+                    <option>Mykolaiv</option>
+                    <option>Odessa</option>
+                    <option>Poltava</option>
+                    <option>Rivne</option>
+                    <option>Sumy</option>
+                    <option>Ternopil</option>
+                    <option>Vinnynsia</option>
+                    <option>Volyn</option>
+                    <option>Zakarpattia</option>
+                    <option>Zaporizhzhia</option>
+                    <option>Zhytomyr</option>
+                  </datalist>
+                </div>
+                <p class="billing-region__error error"></p>
+
+                <div class="form-section__part">
+                  <label for="billing-zip">Zip:</label>
+                  <input type="number" name="billing-zip" id="billing-zip" max="99999" required>
+                </div>
+                <p class="billing-zip__error error"></p>
+
+                <div class="form-section__part">
+                  <label for="billing-phone">Phone:</label>
+                  <input type="tel" name="billing-phone" id="billing-phone" required>
+                </div>
+                <p class="billing-phone__error error"></p>
+              </div>
+
+              <!-- ------------------------DELIVERY ADDRESS-------------------------- -->
+
+              <div class="form-section">
+                <p class="form-section__name">Delivery address</p>
+                <div class="form-section__part">
+                  <label for="same-as-delivery">Same as delivery address</label>
+                  <input type="checkbox" name="same-as-delivery"  id="same-as-delivery">
+                </div>
+
+                <div class="form-section__part">
+                  <label for="delivery-first-name">First-name:</label>
+                  <input type="text" name="delivery-first-name" id="delivery-first-name" pattern="[a-zA-Z0-9]+" minlength="2" maxlength="30" required/>
+                </div>
+                <p class="delivery-first-name__error error"></p>
+
+                <div class="form-section__part"> 
+                  <label for="delivery-last-name">Last name:</label>
+                  <input type="text" name="delivery-last-name" id="delivery-last-name" pattern="[a-zA-Z0-9]+" minlength="2" maxlength="30" required/>
+                </div> 
+                <p class="delivery-last-name__error error"></p> 
+
+                <div class="form-section__part"> 
+                  <label for="delivery-street-address">Street address</label>
+                  <input type="text" name="delivery-street-address" id="delivery-street-address" required/>
+                </div>
+                <p class="delivery-street-address__error error"></p>
+
+                <div class="form-section__part"> 
+                  <label for="delivery-region">Region:</label>
+                  <input type="text" name="delivery-region" id="delivery-region" list="delivery-regions-set" pattern="[Cc]herkasy|[Cc]hernihiv|[Cc]hernivtsi|[Dd]nipropetrovsk|[Dd]onetsk|[Ii]vano-Frankivsk|[Kk]harkiv|[Kk]herson|[Kk]hmeknytsk|[Kk]yiv|[Kk]irovohrad|[Ll]uhansk|[Ll]viv|[Mm]ykolaiv|[Oo]dessa|[Pp]oltava|[Rr]ivne|[S]umy|[Tt]ernopil|[Vv]innynsia|[Vv]oly|[Zz]akarpattia|[Zz]aporizhzhia|[Zz]hytomyr" required/>
+                  <datalist id="delivery-regions-set">
+                    <option>Cherkasy</option>
+                    <option>Chernihiv</option>
+                    <option>Chernivtsi</option>
+                    <option>Dnipropetrovsk</option>
+                    <option>Donetsk</option>
+                    <option>Ivano-Frankivsk</option>
+                    <option>Kharkiv</option>
+                    <option>Kherson</option>
+                    <option>Khmeknytsky</option>
+                    <option>Kyiv</option>
+                    <option>Kirovohrad</option>
+                    <option>Luhansk</option>
+                    <option>Lviv</option>
+                    <option>Mykolaiv</option>
+                    <option>Odessa</option>
+                    <option>Poltava</option>
+                    <option>Rivne</option>
+                    <option>Sumy</option>
+                    <option>Ternopil</option>
+                    <option>Vinnynsia</option>
+                    <option>Volyn</option>
+                    <option>Zakarpattia</option>
+                    <option>Zaporizhzhia</option>
+                    <option>Zhytomyr</option>
+                  </datalist>
+                </div>
+                <p class="delivery-region__error error"></p>
+
+                <div class="form-section__part">
+                  <label for="delivery-zip">Zip:</label>
+                  <input type="number" name="delivery-zip" id="delivery-zip" max="99999" required>
+                </div>
+                <p class="delivery-zip__error error"></p>
+
+                <div class="form-section__part">
+                  <label for="delivery-phone">Phone:</label>
+                  <input type="tel" name="delivery-phone" id="delivery-phone" required>
+                </div>
+                <p class="delivery-phone__error error"></p>
+              </div>
+
+              <!-- ----------------------------DELIVERY DATE------------------------ -->
+
+              <div class="form-section">
+                <p class="form-section__name">Delivery Date</p>
+                
+                <div class="form-section__part">
+                  <label for="year">year:</label>
+                  <input type="number" name="year" id="year" list="years-set" min="2021" max="2030" required>
+                  <datalist id="years-set">
+                    <option>2021</option>
+                    <option>2022</option>
+                    <option>2023</option>
+                    <option>2024</option>
+                    <option>2025</option>
+                    <option>2026</option>
+                    <option>2027</option>
+                    <option>2028</option>
+                    <option>2029</option>
+                    <option>2030</option>
+                  </datalist>
+                </div>
+                <p class="year__error error"></p>
+                
+                <div class="form-section__part">
+                  <label for="month">month:</label>
+                  <input type="text" name="month" id="month" list="months-set" pattern="January|February|March|April|May|June|July|August|September|October|November|December" required>
+                  <datalist id="months-set">
+                    <option>January</option>
+                    <option>February</option>
+                    <option>March</option>
+                    <option>April</option>
+                    <option>May</option>
+                    <option>June</option>
+                    <option>July</option>
+                    <option>August</option>
+                    <option>September</option>
+                    <option>October</option>
+                    <option>November</option>
+                    <option>December</option>
+                  </datalist>
+                </div>
+                <p class="month__error error"></p>
+              
+                <div class="form-section__part">
+                  <label for="day">day:</label>
+                  <input type="number" name="day" id="day" list="days-set" max="31" required>
+                  <datalist id="days-set">
+                  </datalist>
+                </div>
+                <p class="day__error error"></p>
+              </div>
+
+              <!-- -----------------------------PAYMENT-------------------------- -->
+              <div class="form-section">
+                <p class="form-section__name">Payment</p>
+
+                <div class="card-type">
+                  <p class="card-type__header">Choose type of card:</p>
+                  <div class="form-section__part">  
+                    <label for="mastercard">mastercard</label>
+                    <input type="radio" id="mastercard" class="card-type__part" name="card" value="mastercard" >
+                  </div> 
+
+                  <div class="form-section__part">
+                    <label for="visa">visa</label>
+                    <input type="radio" id="visa" class="card-type__part" value="visa" name="card" checked>
+                  </div>
+
+                  <div class="form-section__part">  
+                    <label for="maestro">maestro</label>
+                    <input type="radio" id="maestro" class="card-type__part" value="maestro" name="card" >
+                  </div>
+                </div> 
+
+                <div class="form-section__part">
+                  <label for="card-number">card number</label>
+                  <input type="number" id="card-number" name="card-number" min="1000000000000000" max="9999999999999999"  required>
+                </div>
+                <p class="card-number__error error"></p>
+
+                <div class="form-section__part">
+                  <label for="expiration">expiration</label>
+                  <input type="text" id="expiration" name="expiration" minlength="5"  placeholder="month/year" pattern="^(0[1-9]|1[0-2])\/?([0-9]{4}|[0-9]{2})$" required>
+                </div>
+                <p class="expiration__error error"></p>
+
+                <div class="form-section__part">
+                  <label for="cvv">cvv</label>
+                  <input type="password" id="cvv" name="cvv" maxlength="3" required>
+                </div>
+                <p class="cvv__error error"></p>
+              </div>
+
+              <!-- ---------------------------CREATE ACCOUNT------------------------- -->
+
+              <div class="form-section">
+                <p class="form-section__name">Create account?</p>
+                <div class="form-section__part">
+                  <label for="username">User name</label>
+                  <input type="text" id="account-username" name="account-username" pattern="[a-zA-Z0-9]+">
+                </div>
+                <p class="account-username__error error"></p>
+
+                <div class="form-section__part">
+                  <label for="account-password">Password</label>
+                  <input type="password" id="account-password" name="account-password" minlength="6" maxlength="30">
+                </div>
+                <p class="account-password__error error"></p>
+
+                <div class="form-section__part">
+                  <label for="account-password-confirm">Confirm password</label>
+                  <input type="password" id="account-password-confirm" name="account-password-confirm">
+                </div>
+                <p class="account-password-confirm__error error"></p>
+              </div>
+
+              <button type="submit" class="submit-button">Submit</button>
+            </form>
+          </div>    
+        </main>
+
+        <aside class="side-bar"></aside>
+      </div>
+      <footer class="footer">
+        <p class="footer__copyrights">© Trek Bicycle Corporation</p>
+        <p class="footer__year">2021</p>
+      </footer>
+    </div>
+  </body>
+</html>

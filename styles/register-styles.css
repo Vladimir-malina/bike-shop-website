@@ -1,0 +1,10 @@
+.navigation__link_4 {
+  text-decoration: underline;
+}
+
+.content-register {
+  margin: 20px 0 0 40px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0;
+          flex: 1 0;
+}

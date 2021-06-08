@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet" />
+    <link href="styles/normalize.css" rel="stylesheet" />
+    <link href="styles/styles.css" rel="stylesheet" />
+    <link href="styles/register-styles.css" rel="stylesheet" />
+    <script src="scripts/register-page.js" defer></script>
+    <title>Bike Shop</title>
+  </head>
+
+  <body>
+    <div class="page">
+      <header class="header">
+        <a href="index.html" class="header__logo-link">
+          <img class="header__logo-pic" src="pictures/trek-logo.png" alt="logo"/>
+        </a>
+        <p class="header__name">SOUL FREEDOM</p>
+      </header>
+
+      <div class="wraper">
+        <nav class="navigation">
+          <ul class="navigation__menu">
+            <li><a href="index.html" class="navigation__link navigation__link_1">Home</a></li>
+            <li><a href="about-us.html" class="navigation__link navigation__link_2">About us</a></li>
+            <li><a href="contact.html" class="navigation__link navigation__link_3">Contact</a></li>
+            <li><a href="#" class="navigation__link navigation__link_4">Registration</a></li>
+            <li><a href="order-page.html" class="navigation__link navigation__link_5">Order</a></li>
+          </ul>
+        </nav>
+
+        <main class="content-register">
+          <h2 class="registration-form-header">Registration form</h2>
+          <form action="#" name="registration">
+            <div>
+              <p>Your name</p>
+              <input type="text" name="name" id="name" pattern="[a-zA-Z0-9]+" required/>
+            </div>
+            <div>
+              <p>Your email</p>
+              <input type="email" name="email" id="email" required />
+            </div>
+            <div>
+              <p>Enter your password</p>
+              <input type="password" name="password" id="password" required />
+            </div>
+            <div>
+              <p>Confirm password</p>
+              <input type="password" name="password-check" id="password-check" required/>
+            </div>
+            <br />
+            <div>
+              <button type="submit" name="button" id="button">Submit</button>
+            </div>
+          </form>
+          <br/>
+        </main>
+
+        <aside class="side-bar"></aside>
+      </div>
+      <footer class="footer">
+        <p class="footer__copyrights">© Trek Bicycle Corporation</p>
+        <p class="footer__year">2021</p>
+      </footer>
+    </div>
+  </body>
+</html>
